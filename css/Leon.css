@@ -1,0 +1,113 @@
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+
+}
+/* End Global rules */
+/* Start Header Section */
+.header{
+
+    padding: 20px;
+}
+.header .contaner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header .logo{
+    width: 60px;
+}
+.header .links:hover .icon span:nth-child(2){
+    width: 100%;
+}
+.header .links{
+    position: relative;
+}
+.header .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header .links .icon span{
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 3px;
+}
+.header .links .icon span:first-child
+{
+    width: 100%;
+}
+.header .links .icon span:nth-child(2)
+{
+    width: 60%;
+    transition: 0.3s;
+}
+.header .links .icon span:last-child
+{
+    width: 100%;
+}
+
+
+.header .links ul{
+    background-color: #eee;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top:calc(100% + 20px);
+    display: none;
+}
+.header .links:hover ul{
+    display: block;
+}
+.header .links ul::before{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #eee transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+.header .links ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.header .links ul li a:hover{
+    padding-left: 25px;
+}
+.header .links ul li:not(:last-child) a{
+    border: 1px solid #ddd  
+}
+/* End Head Section */
+/* Start landing Section */
+.landing{
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+}
+.landing .intro-text{
+
+}
+.landing .intro-text h1{
+    margin: 0px;
+}
+.landing .intro-text p{
+    
+}
+
+/* End Landing Section */
