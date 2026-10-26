@@ -1,6 +1,6 @@
 <div align="center">
   <!-- Self-Hosted High-Speed SVG Banner -->
-  <img src="./banner.svg" width="100%" alt="Beshoy Nady - CTO & Co-Founder @ Aujat" />
+  <img src="banner.svg" width="100%" alt="Beshoy Nady - CTO & Co-Founder @ Aujat" />
 
   <br/><br/>
 
