@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./banner.svg" width="100%" alt="Beshoy Nady - CTO & Co-Founder @ Aujat" />
+  <img src="./banner.svg?v=2" width="100%" alt="Beshoy Nady - CTO & Co-Founder @ Aujat" />
 
   <br/><br/>
 
