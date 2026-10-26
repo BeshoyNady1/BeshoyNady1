@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="./banner.svg?v=2" width="100%" alt="Beshoy Nady - CTO & Co-Founder @ Aujat" />
+  <!-- Self-Hosted High-Speed SVG Banner -->
+  <img src="./banner.svg?v=2" width="100%" alt="Beshoy Nady - CTO @ Aujat" />
 
   <br/><br/>
 
@@ -53,10 +54,10 @@ ventures:
   - "Aliens Tech (CTO & Co-Founder)"
 
 architecture_paradigms:
-  - Modular Micro-Monoliths
-  - Multi-Tenant SaaS & ERPs
-  - Event-Driven Webhook Engines
-  - Offline-First Mobile Sync (Drift)
+  - "Modular Micro-Monoliths"
+  - "Multi-Tenant SaaS & ERPs"
+  - "Event-Driven Webhook Engines"
+  - "Offline-First Mobile Sync (Drift)"
 
 infrastructure:
   os: "Ubuntu 26.04 LTS"
@@ -101,28 +102,42 @@ infrastructure:
 
 ---
 
-### 🗺️ Production Infrastructure & System Blueprint
+### 🛠️ Technology & Infrastructure Arsenal
 
-```mermaid
-graph LR
-    subgraph Edge ["🛡️ Edge & Security Layer"]
-        WAF["ModSecurity WAF"] --> N["Nginx Reverse Proxy"]
-        N --> V["Varnish Cache / FastCGI"]
-    end
+<div align="center">
+  <p>
+    <img src="https://skillicons.dev/icons?i=go,php,laravel,rust,tauri,vue,nuxtjs,flutter,dart,tailwind,mysql,sqlite,linux,ubuntu,nginx,docker,git,githubactions&perline=9&theme=dark" alt="Tech Stack Icons" />
+  </p>
+</div>
 
-    subgraph Core ["⚙️ Core Application Cluster"]
-        V --> L["Laravel 11 / Filament ERP"]
-        V --> G["GoFiber v3 High-Speed APIs"]
-        V --> SSR["Vue / Nuxt / Inertia SSR"]
-    end
-
-    subgraph Clients ["📱 Multi-Platform Clients"]
-        M["Flutter + Drift Offline-First"] --> WAF
-        D["Tauri + Rust Desktop Apps"] --> WAF
-    end
-
-    subgraph Data ["🗄️ Data & External Integrations"]
-        L --> DB[("MySQL Multi-Branch Ledger")]
-        G --> DB
-        L --> EXT["ZATCA / Nafath OIDC / PMS Webhooks"]
-    end
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Architectural Layer</th>
+      <th align="left">Core Technologies & Frameworks</th>
+      <th align="left">Primary Engineering Use Case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Backend & Core Systems</b></td>
+      <td><code>PHP 8.4</code> • <code>Laravel</code> • <code>Filament PHP</code> • <code>Go (GoFiber v3)</code> • <code>Rust</code></td>
+      <td>Enterprise ERPs, High-Concurrency APIs, System Daemons</td>
+    </tr>
+    <tr>
+      <td><b>Frontend, Mobile & Desktop</b></td>
+      <td><code>Vue.js</code> • <code>Nuxt.js</code> • <code>Inertia.js</code> • <code>Livewire</code> • <code>Flutter</code> • <code>Tauri</code></td>
+      <td>Reactive SaaS Dashboards, Offline-First Mobile Apps, Native Desktop</td>
+    </tr>
+    <tr>
+      <td><b>Data & Persistence</b></td>
+      <td><code>MySQL</code> • <code>Drift (SQLite)</code> • <code>Redis</code> • <code>Query Optimization</code></td>
+      <td>Multi-Branch Ledgers, Financial Auditing, Local Edge Caching</td>
+    </tr>
+    <tr>
+      <td><b>DevOps & Bare-Metal Cloud</b></td>
+      <td><code>Ubuntu LTS</code> • <code>Hetzner</code> • <code>CloudPanel</code> • <code>Nginx</code> • <code>Varnish</code> • <code>WAF</code></td>
+      <td>Self-Hosted Cloud Orchestration, Reverse-Proxy Caching, Zero-Downtime CI/CD</td>
+    </tr>
+  </tbody>
+</table>
