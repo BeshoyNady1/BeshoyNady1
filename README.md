@@ -1,6 +1,6 @@
 <div align="center">
-  <!-- Self-Hosted High-Speed SVG Banner -->
-<img src="https://raw.githubusercontent.com/BeshoyNady1/BeshoyNady1/main/banner.svg" width="100%" alt="Beshoy Nady - CTO & Co-Founder @ Aujat" />
+  <img src="./banner.svg" width="100%" alt="Beshoy Nady - CTO & Co-Founder @ Aujat" />
+
   <br/><br/>
 
   <!-- Executive Telemetry Badges -->
