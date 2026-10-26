@@ -1,20 +1,18 @@
-<!-- Dynamic Animated Header Banner -->
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:07090E,50:0F172A,100:1E293B&height=200&section=header&text=BESHOY%20NADY&fontSize=46&fontColor=FFFFFF&fontAlignY=38&desc=Chief%20Technology%20Officer%20%26%20Co-Founder%20%40%20Aujat&descSize=19&descAlignY=62&descColor=D4AF37&stroke=D4AF37&strokeWidth=1" alt="Beshoy Nady Banner" />
+  <!-- Self-Hosted High-Speed SVG Banner -->
+  <img src="./banner.svg" width="100%" alt="Beshoy Nady - CTO & Co-Founder @ Aujat" />
 
-  <!-- Animated Typing SVG -->
-  <a href="https://beshoynady1.github.io/profile/">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=1000&color=D4AF37&center=true&vCenter=true&width=800&lines=System+Architect+%26+Technical+Lead+%7C+Enterprise+B2B+SaaS;Architecting+Multi-Branch+ERPs%2C+FinTech+Engines+%26+EdTech+Platforms;High-Concurrency+Backends+in+Go%2C+PHP+8.4+(Laravel)+%26+Rust;Self-Hosted+Cloud+Infrastructure+%26+High-Availability+DevOps" alt="Typing SVG" />
-  </a>
+  <br/><br/>
 
-  <!-- Executive Telemetry & Contact Badges -->
+  <!-- Executive Telemetry Badges -->
   <p>
     <img src="https://img.shields.io/badge/ROLE-CTO_%26_CO--FOUNDER-0F172A?style=for-the-badge&logo=crown&logoColor=D4AF37&labelColor=090D16" />
     <img src="https://img.shields.io/badge/ORGANIZATION-AUJAT-0F172A?style=for-the-badge&logo=buffer&logoColor=D4AF37&labelColor=090D16" />
-    <img src="https://img.shields.io/badge/REPOSITORIES-63+_SYSTEMS-0F172A?style=for-the-badge&logo=github&logoColor=38BDF8&labelColor=090D16" />
-    <img src="https://img.shields.io/badge/COMMITS-570%2B_YEARLY-0F172A?style=for-the-badge&logo=git&logoColor=10B981&labelColor=090D16" />
+    <img src="https://img.shields.io/badge/SYSTEMS_ARCHITECTED-60%2B_REPOS-0F172A?style=for-the-badge&logo=github&logoColor=38BDF8&labelColor=090D16" />
+    <img src="https://img.shields.io/badge/2026_ACTIVITY-510%2B_CONTRIBUTIONS-0F172A?style=for-the-badge&logo=git&logoColor=10B981&labelColor=090D16" />
   </p>
 
+  <!-- Direct Executive Links -->
   <p>
     <a href="https://beshoynady1.github.io/profile/">
       <img src="https://img.shields.io/badge/🌐_Executive_Portfolio-D4AF37?style=for-the-badge&logoColor=090D16" alt="Portfolio" />
@@ -104,59 +102,28 @@ infrastructure:
 
 ---
 
-### 🛠️ Technology & Infrastructure Arsenal
+### 🗺️ Production Infrastructure & System Blueprint
 
-<div align="center">
-  <p>
-    <img src="https://skillicons.dev/icons?i=go,php,laravel,rust,tauri,vue,nuxtjs,flutter,dart,tailwind,mysql,sqlite,linux,ubuntu,nginx,docker,git,githubactions&perline=9&theme=dark" alt="Tech Stack Icons" />
-  </p>
-</div>
+```mermaid
+graph LR
+    subgraph Edge ["🛡️ Edge & Security Layer"]
+        WAF["ModSecurity WAF"] --> N["Nginx Reverse Proxy"]
+        N --> V["Varnish Cache / FastCGI"]
+    end
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th align="left">Architectural Layer</th>
-      <th align="left">Core Technologies & Frameworks</th>
-      <th align="left">Primary Engineering Use Case</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Backend & Core Systems</b></td>
-      <td><code>PHP 8.4</code> • <code>Laravel</code> • <code>Filament PHP</code> • <code>Go (GoFiber v3)</code> • <code>Rust</code></td>
-      <td>Enterprise ERPs, High-Concurrency APIs, System Daemons</td>
-    </tr>
-    <tr>
-      <td><b>Frontend, Mobile & Desktop</b></td>
-      <td><code>Vue.js</code> • <code>Nuxt.js</code> • <code>Inertia.js</code> • <code>Livewire</code> • <code>Flutter</code> • <code>Tauri</code></td>
-      <td>Reactive SaaS Dashboards, Offline-First Mobile Apps, Native Desktop</td>
-    </tr>
-    <tr>
-      <td><b>Data & Persistence</b></td>
-      <td><code>MySQL</code> • <code>Drift (SQLite)</code> • <code>Redis</code> • <code>Query Optimization</code></td>
-      <td>Multi-Branch Ledgers, Financial Auditing, Local Edge Caching</td>
-    </tr>
-    <tr>
-      <td><b>DevOps & Bare-Metal Cloud</b></td>
-      <td><code>Ubuntu LTS</code> • <code>Hetzner</code> • <code>CloudPanel</code> • <code>Nginx</code> • <code>Varnish</code> • <code>WAF</code></td>
-      <td>Self-Hosted Cloud Orchestration, Reverse-Proxy Caching, Zero-Downtime CI/CD</td>
-    </tr>
-  </tbody>
-</table>
+    subgraph Core ["⚙️ Core Application Cluster"]
+        V --> L["Laravel 11 / Filament ERP"]
+        V --> G["GoFiber v3 High-Speed APIs"]
+        V --> SSR["Vue / Nuxt / Inertia SSR"]
+    end
 
----
+    subgraph Clients ["📱 Multi-Platform Clients"]
+        M["Flutter + Drift Offline-First"] --> WAF
+        D["Tauri + Rust Desktop Apps"] --> WAF
+    end
 
-### 📈 Engineering Pulse & Commit Activity
-
-<div align="center">
-  <!-- Full-Width Contribution Graph -->
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=BeshoyNady1&bg_color=090D16&color=D4AF37&line=38BDF8&point=FFFFFF&area=true&area_color=1E293B&hide_border=true&custom_title=Beshoy%20Nady's%20Engineering%20Contribution%20Pulse" alt="Contribution Graph" />
-  
-  <br/><br/>
-
-  <!-- Streak Stats (Reads Contribution Graph Directly) -->
-  <img width="65%" src="https://github-readme-streak-stats.herokuapp.com/?user=BeshoyNady1&theme=tokyonight&hide_border=true&background=090D16&ring=D4AF37&fire=D4AF37&currStreakLabel=38BDF8&sideLabels=94A3B8&dates=64748B" alt="GitHub Streak" />
-</div>
-
-<!-- Animated Footer Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:07090E,50:0F172A,100:D4AF37&height=110&section=footer" />
+    subgraph Data ["🗄️ Data & External Integrations"]
+        L --> DB[("MySQL Multi-Branch Ledger")]
+        G --> DB
+        L --> EXT["ZATCA / Nafath OIDC / PMS Webhooks"]
+    end
